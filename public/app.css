@@ -1,0 +1,81 @@
+:root {
+  --dark: #111;
+  --light: #eee;
+  --color: lightgreen;
+}
+
+* {
+  /* border: 1px solid gray; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color);
+}
+
+nav {
+  padding: 1em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+main {
+  text-align: center;
+}
+
+header {
+  border-bottom: 1px solid var(--color);
+}
+
+header, section {
+  padding: 3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+#site-header {
+  font-size: 3rem;
+}
+
+section * {
+  padding: 1em;
+}
+
+h3, p {
+  color: var(--light);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+input, button {
+  padding: 5px 10px;
+}
+
+button, input[type=submit] {
+  background-color: transparent;
+  border: 1px solid ;
+  color: var(--color);
+  cursor: pointer;
+}
+
+button:hover, input[type=submit]:hover {
+  background-color: var(--color);
+  color: var(--dark);
+}
+
+a {
+  color: var(--color);
+}
