@@ -8,11 +8,11 @@
         <h3 class="post-title">{{ $post->title }}</h3>
         <p class="post-content">{{ $post->content }}</p>
         <div class="actions">
-          <a href="{{ route('edit', ['id' => $post->id]) }}">Update</a>
+          <a class="btn btn-action" href="{{ route('edit', ['id' => $post->id]) }}">Update</a>
           <form action="{{ route('destroy', ['id' => $post->id]) }}" method="post">
             @csrf
             @method('DELETE')
-            <input type="submit" value="Delete">
+            <input type="submit" value="Delete" class="btn btn-action">
           </form>
         </div>
       </div>
