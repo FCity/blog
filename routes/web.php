@@ -16,7 +16,6 @@ use App\Http\Controllers\PostsController;
 
 Route::get('/', function () {
     return view('home');
-    //return str('hello blog')->slug();
 })->name('home');
 
 Route::controller(PostsController::class)->group(function () {
@@ -32,8 +31,3 @@ Route::controller(PostsController::class)->group(function () {
 Route::get('/about', function () {
     return view('about');
 })->name('about');
-
-Route::get('/endpoint', function () {
-    //return redirect()->route('home');
-    return to_route('home');
-});
