@@ -16,21 +16,6 @@ body {
   color: var(--dark);
 }
 
-nav {
-  background-color: var(--color);
-  padding: 1em;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-main {
-  text-align: center;
-}
-
 header {
   background-color: var(--color);
   color: var(--light);
@@ -46,6 +31,22 @@ h1, h2, h3, h4, h5, h6 {
 
 #site-header {
   font-size: 3rem;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--color);
+  padding: 1em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+main {
+  text-align: center;
 }
 
 section * {

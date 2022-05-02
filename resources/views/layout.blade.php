@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="{{ asset('app.css') }}">
 </head>
 <body>
+  <header>
+    <h1 id="site-header">Blog</h1>
+  </header>
+
   <nav>
     <ul>
       <li>
@@ -25,10 +29,6 @@
   </nav>
 
   <main>
-    <header>
-      <h1 id="site-header">Blog</h1>
-    </header>
-
     @yield('section')
   </main>
 </body>
