@@ -16,11 +16,11 @@
         <textarea
           name="content"
           id="content"
-          cols="30"
-          rows="10"
+          cols="60"
+          rows="5"
           placeholder="Post Content"></textarea>
       </div>
-      <input type="submit" value="Post">
+      <input type="submit" value="Post" class="btn btn-action">
     </form>
   </section>
 @endsection

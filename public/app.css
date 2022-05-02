@@ -1,23 +1,40 @@
 :root {
   --dark: #111;
   --light: #eee;
-  --color: lightgreen;
+  --color: rgba(35, 35, 218, 0.66);
 }
 
 * {
-  /* border: 1px solid gray; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: var(--dark);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--color);
+  color: var(--dark);
+}
+
+header {
+  background-color: var(--color);
+  color: var(--light);
+}
+
+header, section {
+  padding: 3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+#site-header {
+  font-size: 3rem;
+  text-align: center;
 }
 
 nav {
+  background-color: var(--color);
   padding: 1em;
 }
 
@@ -31,51 +48,49 @@ main {
   text-align: center;
 }
 
-header {
-  border-bottom: 1px solid var(--color);
-}
-
-header, section {
-  padding: 3em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-}
-
-#site-header {
-  font-size: 3rem;
-}
-
 section * {
   padding: 1em;
 }
 
-h3, p {
-  color: var(--light);
+h2 {
+  color: var(--color);
+}
+
+input[type=text], textarea {
+  border: 1px solid var(--color);
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: var(--color);
+}
+
+input[type=text], textarea, .btn-action {
+  letter-spacing: 1px;
 }
 
 .actions {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-input, button {
+a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.btn-action {
   padding: 5px 10px;
 }
 
-button, input[type=submit] {
+.btn-action {
   background-color: transparent;
   border: 1px solid var(--color);
+  font-size: 1.25rem;
   color: var(--color);
   cursor: pointer;
 }
 
-button:hover, input[type=submit]:hover {
+.btn-action:hover {
   background-color: var(--color);
-  color: var(--dark);
-}
-
-a {
-  color: var(--color);
+  color: var(--light);
 }

@@ -22,7 +22,7 @@
           rows="10"
           placeholder="Post Content">{{ $post->content }}</textarea>
       </div>
-      <input type="submit" value="Post">
+      <input type="submit" value="Post" class="btn btn-action">
     </form>
   </section>
 @endsection
